@@ -15,12 +15,15 @@
 # Macro for bibliographical citations
 #+macro: cvcite \cite{$1}
 
+
 # Commands for including the Publications list using biblatex
 # defernumbers=true makes the "Publications" section label the entries
 # consecutively, instead of in some semi-random order determined by LaTeX.
 #+latex_header: \usepackage[defernumbers=true,style=numeric,sorting=ydnt]{biblatex}
 #+latex_header: \addbibresource{}
 #+latex_header: \defbibheading{cvbibsection}[\bibname]{\cvsubsection{#1}}
+
+#+cvfooter_right: \gitfooter
 
 # Some font and separator redefinitions for the AwesomeCV class
 #+latex_header: \renewcommand{\acvHeaderSocialSep}{\enskip\cdotp\enskip}

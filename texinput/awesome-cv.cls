@@ -98,6 +98,10 @@
 % Wrap figures
 \RequirePackage{wrapfig}
 
+% git revision footer
+\RequirePackage{xstring}
+\RequirePackage{catchfile}
+
 %-------------------------------------------------------------------------------
 %                Configuration for directory locations
 %-------------------------------------------------------------------------------
@@ -780,4 +784,14 @@
       \\\\\\
       \letterenclosurestyle{\@letterenclname: \@letterenclosure} \\
     }
+}
+
+\newcommand{\gitfooter} {
+\CatchFileDef{\headfull}{.git/HEAD}{}
+\StrGobbleRight{\headfull}{1}[\head]
+\StrBehind[2]{\head}{/}[\branch]
+\IfFileExists{.git/refs/heads/\branch}{%
+    \CatchFileDef{\commit}{.git/refs/heads/\branch}{}}{%
+    \newcommand{\commit}{\dots~(in \emph{packed-refs})}}
+    git \texttt{\StrLeft{\commit}{6}}
 }
