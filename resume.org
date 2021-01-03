@@ -1,0 +1,164 @@
+:CV_CONFIG:
+
+#+cvcolorizelinks: awesome-pulseR
+#+cvcolor: awesome-pulseB
+#+cvunderlinelinks: false
+
+#+options: num:1
+#+options: prop:("FROM" "TO" "LOCATION" "EMPLOYER" "SCHOOL" "ORGANIZATION" "DATE" "LABEL")
+#+options: toc:nil
+
+# LaTeX options
+
+#+latex_class_options: [12pt,a4paper]
+
+# Macro for bibliographical citations
+#+macro: cvcite \cite{$1}
+
+# Commands for including the Publications list using biblatex
+# defernumbers=true makes the "Publications" section label the entries
+# consecutively, instead of in some semi-random order determined by LaTeX.
+#+latex_header: \usepackage[defernumbers=true,style=numeric,sorting=ydnt]{biblatex}
+#+latex_header: \addbibresource{}
+#+latex_header: \defbibheading{cvbibsection}[\bibname]{\cvsubsection{#1}}
+
+# Some font and separator redefinitions for the AwesomeCV class
+#+latex_header: \renewcommand{\acvHeaderSocialSep}{\enskip\cdotp\enskip}
+#+latex_header: \renewcommand{\acvHeaderIconSep}{~}
+#+latex_header: \renewcommand*{\bodyfontlight}{\sourcesanspro}
+#+latex_header: \renewcommand*{\entrylocationstyle}[1]{{\fontsize{10pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
+#+latex_header: \renewcommand*{\subsectionstyle}{\entrytitlestyle}
+#+latex_header: \renewcommand*{\headerquotestyle}[1]{{\fontsize{8pt}{1em}\bodyfont #1}}
+
+:END:
+
+#+TITLE: CV
+#+AUTHOR: Daniel Brodsky
+#+EMAIL: danbrodsky@pm.me
+#+ADDRESS: Vancouver, British Columbia, Canada
+#+HOMEPAGE: danbrodsky.me
+#+GITHUB: github.com/danbrodsky
+#+LINKEDIN: linkedin.com/danbrodsky
+
+
+* Table of Contents :TOC_3:noexport:
+- [[#extracurricular][Extracurricular]]
+  - [[#managerial-member-of-the-ubc-ctf-team][Managerial member of the UBC CTF team]]
+- [[#research][Research]]
+  - [[#human-interaction-with-symbolic-execution][Human interaction with symbolic execution]]
+- [[#projects][Projects]]
+  - [[#webrtl][WebRTL]]
+  - [[#xeros-kernel][Xeros kernel]]
+- [[#experience][Experience]]
+  - [[#sap][SAP]]
+    - [[#software-security-engineer-intern][Software Security Engineer intern]]
+  - [[#hsbc][HSBC]]
+    - [[#cloud-security-developer-intern][Cloud Security Developer intern]]
+  - [[#telus][TELUS]]
+    - [[#security-developer-intern][Security developer intern]]
+- [[#education][Education]]
+  - [[#bachelor-in-computer-science-university-of-british-columbia][Bachelor in Computer Science, University of British Columbia]]
+    - [[#vancouver-british-columbia-canada][Vancouver, British Columbia, Canada]]
+
+* Extracurricular
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+** Managerial member of the [[https://ubcctf.github.io/][UBC CTF]] team
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: <2019-02-07>
+:END:
+   - Developed a strong understanding of system fundamentals, and improved problem solving while tackling binary exploitation and reversing problems in *60+ CTFs* using many different frameworks, libraries, and languages (*Python*, *C*, *C++*, *Rust*)
+   - *1st place* in Canada for 2019 and 2020 on [[https://ctftime.org/team/73723][CTFtime]]
+* Research
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+** Human interaction with symbolic execution
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: <2020-06-07>
+:TO: <2020-09-15>
+:END:
+   - Examined possible methods of leveraging humans to improve binary analysis when using dynamic and static symbolic execution tools and vice-versa as part of a [[https://www.darpa.mil/][DARPA]] research project between UBC, and [[https://sefcom.asu.edu/][ASU SEFCOM]]
+   - Investigated existing work in the area and underlying internals of techniques used in binary analysis/decompilation
+   - Created prototypes for adding functionality to angr, an open-source concolic execution framework, with the goal of improving human understanding during analysis
+* Projects
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+** WebRTL
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:END:
+  - Designed and built an FPGA simulator in *Rust* for simulating hardware design netlists in the browser using *WebAssembly*
+  - Wrote several demo designs in Clash (*Haskell*) for demonstrating functionality of the simulator
+** Xeros kernel
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:END:
+  - Wrote a Xeros-like operating system in *C* and *x86 assembly* to learn about operating system internals
+  - Implemented core kernel functionalities such as memory allocation, context switching/dispatching, IPC, and I/O
+* Experience
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+** [[https://www.sap.com/canada/products/cloud-analytics.html][SAP]]
+:PROPERTIES:
+:CV_ENV:   cvemployer
+:END:
+*** Software Security Engineer intern
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: <2019-05-07>
+:TO: <2019-12-27>
+:END:
+  - Wrote a multi-platform application using *Python* and *Terraform* for aggregating access privileges for all cloud-related assets
+  - Improved on an existing SIEM for alerting on abnormal AWS events, *improving uptime by ~90%* and *performance by ~40%*
+  - Maintained a security scanner for automated discovery of vulnerabilities in *over 100 active projects*
+** [[https://www.hsbc.ca/][HSBC]]
+:PROPERTIES:
+:CV_ENV:   cvemployer
+:END:
+*** Cloud Security Developer intern
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: <2018-05-07>
+:TO: <2018-08-27>
+:END:
+- Built a proof of concept for an OAuth2 layer to make the HSBC IAM service act as an OAuth2 server without direct modification
+- Created an OAuth2 authentication service for the launch of several new cloud-based applications
+** [[https://www.telus.com/en/][TELUS]]
+:PROPERTIES:
+:CV_ENV:   cvemployer
+:END:
+*** Security developer intern
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: <2016-09-07>
+:TO: <2017-04-27>
+:END:
+- Worked on a SIEM system for processing *100M+ events per day* to detect internal network intrusions
+- Created data transformation pipelines to filter and move relevant events to an SQL database for client viewing
+- Automated the detection of malformed data transformation pipelines and documentation of new pipelines added to the system
+* Education
+:PROPERTIES:
+:CV_ENV:   cventries
+:END:
+** Bachelor in Computer Science, [[https://www.ubc.ca/][University of British Columbia]]
+:PROPERTIES:
+:CV_ENV:   cvschool
+:SCHOOL:
+:END:
+*** Vancouver, British Columbia, Canada
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:DATE: <2020-04-28>
+:END:
+- Notable courses include Operating Systems, Parallel computing, Distributed systems, Advanced Algorithms Analysis
+
+* Local Variables :ARCHIVE:noexport:
+# Local Variables:
+# eval: (add-hook 'after-save-hook (lambda () (org-export-to-file 'awesomecv "danbrodsky-resume.tex")) :append :local)
+# End:
