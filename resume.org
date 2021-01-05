@@ -46,7 +46,7 @@
 
 * Table of Contents :TOC_3:noexport:
 - [[#extracurricular][Extracurricular]]
-  - [[#managerial-member-of-the-ubc-ctf-team][Managerial member of the UBC CTF team]]
+  - [[#founding-member-of-the-ubc-ctf-team][Founding member of the UBC CTF team]]
 - [[#research][Research]]
   - [[#human-interaction-with-symbolic-execution][Human interaction with symbolic execution]]
 - [[#projects][Projects]]
@@ -67,13 +67,13 @@
 :PROPERTIES:
 :CV_ENV:   cventries
 :END:
-** Managerial member of the [[https://ubcctf.github.io/][UBC CTF]] team
+** Founding member of the [[https://ubcctf.github.io/][UBC CTF]] team
 :PROPERTIES:
 :CV_ENV:   cvsubentry
 :FROM: <2019-02-07>
 :END:
-   - Developed a strong understanding of system fundamentals, and improved problem solving while tackling binary exploitation and reversing problems in *60+ CTFs* using many different frameworks, libraries, and languages (*Python*, *C*, *C++*, *Rust*)
-   - *1st place* in Canada for 2019 and 2020 on [[https://ctftime.org/team/73723][CTFtime]]
+   - Solved cybersecurity-related problems using a variety of different frameworks, libraries, and languages (*Python*, *C*, *C++*, *Rust*) in *60+ CTFs*, achieving *1st place* in Canada for 2019 and 2020 on [[https://ctftime.org/team/73723][CTFtime]]
+   - Organized events and provided presentations/mentorship to the team related to binary exploitation and reverse engineering, helping grow the team to *100+ members*
 * Research
 :PROPERTIES:
 :CV_ENV:   cventries
@@ -85,7 +85,7 @@
 :TO: <2020-09-15>
 :END:
    - Examined possible methods of leveraging humans to improve binary analysis when using dynamic and static symbolic execution tools and vice-versa as part of a [[https://www.darpa.mil/][DARPA]] research project between UBC, and [[https://sefcom.asu.edu/][ASU SEFCOM]]
-   - Investigated existing work in the area and underlying internals of techniques used in binary analysis/decompilation
+   - Developed an academic understanding of binary analysis and decompilation to direct our research moving forward
    - Created prototypes for adding functionality to angr, an open-source concolic execution framework, with the goal of improving human understanding during analysis
 * Projects
 :PROPERTIES:
@@ -101,7 +101,7 @@
 :PROPERTIES:
 :CV_ENV:   cvsubentry
 :END:
-  - Wrote a Xeros-like operating system in *C* and *x86 assembly* to learn about operating system internals
+  - Wrote a Xeros-like operating system in *C* and *x86 assembly*, learning about operating system internals in the process
   - Implemented core kernel functionalities such as memory allocation, context switching/dispatching, IPC, and I/O
 * Experience
 :PROPERTIES:
@@ -117,7 +117,7 @@
 :FROM: <2019-05-07>
 :TO: <2019-12-27>
 :END:
-  - Wrote a multi-platform application using *Python* and *Terraform* for aggregating access privileges for all cloud-related assets
+  - Designed and built an application using *Python*, *Go*, and *Terraform* for aggregating access privileges for all cloud-related assets
   - Improved on an existing SIEM for alerting on abnormal AWS events, *improving uptime by ~90%* and *performance by ~40%*
   - Maintained a security scanner for automated discovery of vulnerabilities in *over 100 active projects*
 ** [[https://www.hsbc.ca/][HSBC]]
@@ -130,7 +130,7 @@
 :FROM: <2018-05-07>
 :TO: <2018-08-27>
 :END:
-- Built a proof of concept for an OAuth2 layer to make the HSBC IAM service act as an OAuth2 server without direct modification
+- Built a prototype in *Python* for an authentication layer that makes an internal IAM service act as an OAuth2 server without direct modification, saving on development time and costs compared to a conventional solution
 - Created an OAuth2 authentication service for the launch of several new cloud-based applications
 ** [[https://www.telus.com/en/][TELUS]]
 :PROPERTIES:
@@ -142,8 +142,7 @@
 :FROM: <2016-09-07>
 :TO: <2017-04-27>
 :END:
-- Worked on a SIEM system for processing *100M+ events per day* to detect internal network intrusions
-- Created data transformation pipelines to filter and move relevant events to an SQL database for client viewing
+- Created data transformation pipelines for a SIEM processing *100M+ events per day* to detect internal network intrusions, moving relevant events to a *SQL* database and custom interface for client viewing
 - Automated the detection of malformed data transformation pipelines and documentation of new pipelines added to the system
 * Education
 :PROPERTIES:
@@ -157,7 +156,7 @@
 *** Vancouver, British Columbia, Canada
 :PROPERTIES:
 :CV_ENV:   cvsubentry
-:DATE: <2020-04-28>
+:DATE: <2020-06-28>
 :END:
 - Notable courses include Operating Systems, Parallel computing, Distributed systems, Advanced Algorithms Analysis
 
