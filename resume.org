@@ -35,13 +35,13 @@
 
 :END:
 
-#+TITLE: CV
+#+TITLE: Resume
 #+AUTHOR: Daniel Brodsky
 #+EMAIL: danbrodsky@pm.me
 #+ADDRESS: Vancouver, British Columbia, Canada
 #+HOMEPAGE: danbrodsky.me
-#+GITHUB: github.com/danbrodsky
-#+LINKEDIN: linkedin.com/danbrodsky
+#+GITHUB: danbrodsky
+#+LINKEDIN: danbrodsky
 
 
 * Table of Contents :TOC_3:noexport:
@@ -72,7 +72,7 @@
 :CV_ENV:   cvsubentry
 :FROM: <2019-02-07>
 :END:
-   - Solved cybersecurity-related problems using a variety of different frameworks, libraries, and languages (*Python*, *C*, *C++*, *Rust*) in *60+ CTFs*, achieving *1st place* in Canada for 2019 and 2020 on [[https://ctftime.org/team/73723][CTFtime]]
+   - Solved cybersecurity-related problems in various domains (*Linux*, *Windows*, *Embedded*) using a variety of different techniques, tools, and languages (*Python*, *C*, *C++*, *Rust*) in *60+ CTFs*, achieving [[https://ctftime.org/team/73723][*1st place* in Canada for 2019 and 2020]]
    - Organized events and provided presentations/mentorship to the team related to binary exploitation and reverse engineering, helping grow the team to *100+ members*
 * Research
 :PROPERTIES:
@@ -118,7 +118,7 @@
 :TO: <2019-12-27>
 :END:
   - Designed and built an application using *Python*, *Go*, and *Terraform* for aggregating access privileges for all cloud-related assets
-  - Improved on an existing SIEM for alerting on abnormal AWS events, *improving uptime by ~90%* and *performance by ~40%*
+  - Improved on a SIEM for alerting on abnormal AWS events, *achieving ~100% uptime* and *improving performance by ~40%*
   - Maintained a security scanner for automated discovery of vulnerabilities in *over 100 active projects*
 ** [[https://www.hsbc.ca/][HSBC]]
 :PROPERTIES:
@@ -158,7 +158,7 @@
 :CV_ENV:   cvsubentry
 :DATE: <2020-06-28>
 :END:
-- Notable courses include Operating Systems, Parallel computing, Distributed systems, Advanced Algorithms Analysis
+- Notable courses include Operating Systems, Parallel Computing, Distributed Systems, Advanced Algorithms Analysis
 
 * Local Variables :ARCHIVE:noexport:
 # Local Variables:
