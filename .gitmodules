@@ -1,0 +1,3 @@
+[submodule "gitinfo2-latexmk"]
+	path = gitinfo2-latexmk
+	url = https://github.com/rbarazzutti/gitinfo2-latexmk

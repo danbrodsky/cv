@@ -53,12 +53,14 @@
   - [[#webrtl][WebRTL]]
   - [[#xeros-kernel][Xeros kernel]]
 - [[#experience][Experience]]
+  - [[#kunnamon][Kunnamon]]
+    - [[#freelance-security-developer][Freelance Security Developer]]
   - [[#sap][SAP]]
     - [[#software-security-engineer-intern][Software Security Engineer intern]]
   - [[#hsbc][HSBC]]
     - [[#cloud-security-developer-intern][Cloud Security Developer intern]]
   - [[#telus][TELUS]]
-    - [[#security-developer-intern][Security developer intern]]
+    - [[#security-developer-intern][Security Developer intern]]
 - [[#education][Education]]
   - [[#bachelor-in-computer-science-university-of-british-columbia][Bachelor in Computer Science, University of British Columbia]]
     - [[#vancouver-british-columbia-canada][Vancouver, British Columbia, Canada]]
@@ -73,7 +75,8 @@
 :FROM: <2019-02-07>
 :END:
    - Solved cybersecurity-related problems in various domains (*Linux*, *Windows*, *Embedded*) using a variety of different techniques, tools, and languages (*Python*, *C*, *C++*, *Rust*) in *60+ CTFs*, achieving [[https://ctftime.org/team/73723][*1st place* in Canada for 2019 and 2020]]
-   - Organized events and provided presentations/mentorship to the team related to binary exploitation and reverse engineering, helping grow the team to *100+ members*
+   - Organized events and provided presentations/mentorship related to binary exploitation and reverse engineering, helping grow the team to *100+ members* (see my website at [[https://www.danbrodsky.me][danbrodsky.me]] for writeups to some of the interesting problems I have solved)
+
 * Research
 :PROPERTIES:
 :CV_ENV:   cventries
@@ -107,6 +110,19 @@
 :PROPERTIES:
 :CV_ENV:   cventries
 :END:
+** [[https://kunnamon.io/][Kunnamon]]
+:PROPERTIES:
+:CV_ENV:   cvemployer
+:END:
+*** Freelance Security Developer
+:PROPERTIES:
+:CV_ENV:   cvsubentry
+:FROM: <2021-02-01>
+:TO: <2021-07-01>
+:END:
+  - Conducted vulnerability research into the Tesla Model 3 IC as part of Pwn2Own, discovering several bugs in the process
+  - Developed a unikernel in *C* for running an emulator with reduced overhead, leading to a *1.2x increase in performance*
+  - Wrote a more extensible interface for configuring QEMU machines and peripherals in *Rust*
 ** [[https://www.sap.com/canada/products/cloud-analytics.html][SAP]]
 :PROPERTIES:
 :CV_ENV:   cvemployer
@@ -117,9 +133,8 @@
 :FROM: <2019-05-07>
 :TO: <2019-12-27>
 :END:
-  - Designed and built an application using *Python*, *Go*, and *Terraform* for aggregating access privileges for all cloud-related assets
+  - Designed an application using *Python*, *Go*, and *Terraform* for aggregating access privileges for all cloud-related assets
   - Improved on a SIEM for alerting on abnormal AWS events, *achieving ~100% uptime* and *improving performance by ~40%*
-  - Maintained a security scanner for automated discovery of vulnerabilities in *over 100 active projects*
 ** [[https://www.hsbc.ca/][HSBC]]
 :PROPERTIES:
 :CV_ENV:   cvemployer
@@ -130,20 +145,18 @@
 :FROM: <2018-05-07>
 :TO: <2018-08-27>
 :END:
-- Built a prototype in *Python* for an authentication layer that makes an internal IAM service act as an OAuth2 server without direct modification, saving on development time and costs compared to a conventional solution
-- Created an OAuth2 authentication service for the launch of several new cloud-based applications
+- Built a prototype authentication layer in *Python* that makes an IAM service act as an OAuth2 server without direct modification, saving on development time and costs compared to a conventional solution
 ** [[https://www.telus.com/en/][TELUS]]
 :PROPERTIES:
 :CV_ENV:   cvemployer
 :END:
-*** Security developer intern
+*** Security Developer intern
 :PROPERTIES:
 :CV_ENV:   cvsubentry
 :FROM: <2016-09-07>
 :TO: <2017-04-27>
 :END:
 - Created data transformation pipelines for a SIEM processing *100M+ events per day* to detect internal network intrusions, moving relevant events to a *SQL* database and custom interface for client viewing
-- Automated the detection of malformed data transformation pipelines and documentation of new pipelines added to the system
 * Education
 :PROPERTIES:
 :CV_ENV:   cventries
