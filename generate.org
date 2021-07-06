@@ -1,0 +1,17 @@
+#+begin_src elisp
+(use-package ox-moderncv
+  :load-path "path_to_repository/org-cv/"
+  :init (require 'ox-moderncv))
+
+(with-temp-buffer (insert-file-contents "./resume.org")
+                  (org-export-to-file 'awesomecv "danbrodsky-resume.tex"))
+#+end_src
+
+#+RESULTS:
+: danbrodsky-resume.tex
+
+#+begin_src bash
+latexmk danbrodsky-resume.tex
+#+end_src
+
+#+RESULTS:
