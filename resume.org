@@ -24,6 +24,7 @@
 #+latex_header: \defbibheading{cvbibsection}[\bibname]{\cvsubsection{#1}}
 
 #+cvfooter_right: \gitfooter
+#+cvfooter_left: July 2021
 
 # Some font and separator redefinitions for the AwesomeCV class
 #+latex_header: \renewcommand{\acvHeaderSocialSep}{\enskip\cdotp\enskip}
